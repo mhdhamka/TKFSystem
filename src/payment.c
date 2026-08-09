@@ -47,13 +47,15 @@ void paymentProcess(Customer *customer)
     int choice;
 
     printf("\n");
-    printf("=========== PAYMENT ===========\n");
-    printf("1. Cash\n");
-    printf("2. Debit / Credit Card\n");
-    printf("3. E-Wallet\n");
-    printf("===============================\n");
+    printf(COLOR_CYAN "  ╭────────────────────────────────────╮\n");
+    printf("  │          " COLOR_YELLOW COLOR_BOLD "PAYMENT PROCESSING" COLOR_CYAN "        │\n");
+    printf("  ├────────────────────────────────────┤\n");
+    printf("  │ " COLOR_GREEN "[1]" COLOR_RESET " 💵 Cash Payment                    " COLOR_CYAN "│\n");
+    printf("  │ " COLOR_GREEN "[2]" COLOR_RESET " 💳 Debit / Credit Card             " COLOR_CYAN "│\n");
+    printf("  │ " COLOR_GREEN "[3]" COLOR_RESET " 📱 E-Wallet                        " COLOR_CYAN "│\n");
+    printf("  ╰────────────────────────────────────╯\n" COLOR_RESET);
 
-    printf("Choose payment method: ");
+    printf("\n  " COLOR_BOLD COLOR_BLUE "➜ Choose payment method [1-3]: " COLOR_RESET);
     scanf("%d", &choice);
     clearInputBuffer();
 
@@ -64,13 +66,13 @@ void paymentProcess(Customer *customer)
 
             do
             {
-                printf("Cash Received (RM): ");
+                printf("  " COLOR_BOLD COLOR_BLUE "➜ Enter Cash Received (RM): " COLOR_RESET);
                 scanf("%f", &customer->payment);
                 clearInputBuffer();
 
                 if (customer->payment < customer->finalTotal)
                 {
-                    printf("Insufficient payment.\n");
+                    printf("  " COLOR_RED "[!] Insufficient payment. Amount required is RM%.2f\n" COLOR_RESET, customer->finalTotal);
                 }
 
             } while (customer->payment < customer->finalTotal);
@@ -84,16 +86,18 @@ void paymentProcess(Customer *customer)
             strcpy(customer->paymentMethod, "Card");
             customer->payment = customer->finalTotal;
             customer->change = 0.0f;
+            printf("  " COLOR_GREEN "✔ Card payment processed successfully.\n" COLOR_RESET);
             break;
 
         case 3:
             strcpy(customer->paymentMethod, "E-Wallet");
             customer->payment = customer->finalTotal;
             customer->change = 0.0f;
+            printf("  " COLOR_GREEN "✔ E-Wallet payment processed successfully.\n" COLOR_RESET);
             break;
 
         default:
-            printf("Invalid option.\n");
+            printf("  " COLOR_RED "[!] Invalid option. Please try again.\n" COLOR_RESET);
             paymentProcess(customer);
             return;
     }
