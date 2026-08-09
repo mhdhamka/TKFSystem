@@ -13,6 +13,18 @@ Originally developed as an academic project, this version represents a **persona
 
 ---
 
+## 📸 Application Preview
+
+<div align="center">
+
+![TKF Restaurant Dashboard Preview](assets/screenshots/tkf.png)
+
+*Modern interactive CLI dashboard with UTF-8 support and ANSI UI styling*
+
+</div>
+
+---
+
 # Introduction
 
 The **TKF Restaurant Payment System** is a console application designed to simulate a real-world restaurant Point-of-Sale (POS) system.
@@ -237,3 +249,4 @@ The original version was created as part of an academic project, while this enha
 - File-based data management
 
 ---
+
