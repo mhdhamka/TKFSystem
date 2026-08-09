@@ -6,6 +6,21 @@
 #include <string.h>
 #include <time.h>
 
+#if defined(_WIN32) || defined(_WIN64)
+#include <windows.h>
+#endif
+
+// ANSI Color & Style Codes for Modern UI
+#define COLOR_RESET     "\033[0m"
+#define COLOR_BOLD      "\033[1m"
+#define COLOR_DIM       "\033[2m"
+#define COLOR_CYAN      "\033[36m"
+#define COLOR_GREEN     "\033[32m"
+#define COLOR_YELLOW    "\033[33m"
+#define COLOR_RED       "\033[31m"
+#define COLOR_MAGENTA   "\033[35m"
+#define COLOR_BLUE      "\033[34m"
+
 #define MAX_MENU 50
 #define MAX_CART 20
 #define MAX_CUSTOMER 100
@@ -65,7 +80,6 @@ typedef struct
     float payment;
     float change;
     char dateTime[50];
-
 
 } Customer;
 
@@ -130,7 +144,8 @@ void viewTransaction();
    ============================ */
 
 void getCurrentDateTime(char buffer[]);
-
 void clearInputBuffer();
+void clearScreen();
+void printHeader(const char* title);
 
 #endif
