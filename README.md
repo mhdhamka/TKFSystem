@@ -13,7 +13,7 @@ Originally developed as an academic project, this version represents a **persona
 
 ---
 
-## 📸 Application Preview
+## Application Preview
 
 <div align="center">
 
