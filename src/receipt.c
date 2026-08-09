@@ -20,25 +20,22 @@ void printReceipt(Customer customer)
     getCurrentDateTime(dateTime);
 
     printf("\n");
-    printf("========================================================\n");
-    printf("                 TKF KOREAN RESTAURANT\n");
-    printf("========================================================\n");
-
-    printf("Date           : %s\n", dateTime);
-    printf("Receipt No     : %s\n", customer.receiptNo);
-    printf("Member Status  : %s\n", customer.memberStatus);
-    printf("Order Method   : %s\n", customer.orderMethod);
-    printf("Payment Method : %s\n", customer.paymentMethod);
-
-    printf("--------------------------------------------------------\n");
-    printf("%-3s %-22s %-8s %-5s %-8s\n",
+    printf(COLOR_CYAN "  ╭────────────────────────────────────────────────────────╮\n");
+    printf("  │               " COLOR_YELLOW COLOR_BOLD "TKF KOREAN RESTAURANT RECEIPT" COLOR_CYAN "            │\n");
+    printf("  ├────────────────────────────────────────────────────────┤\n");
+    printf("  │ " COLOR_DIM "Date & Time    :" COLOR_RESET " %-37s " COLOR_CYAN "│\n", dateTime);
+    printf("  │ " COLOR_DIM "Receipt No     :" COLOR_RESET " %-37s " COLOR_CYAN "│\n", customer.receiptNo);
+    printf("  │ " COLOR_DIM "Member Status  :" COLOR_RESET " %-37s " COLOR_CYAN "│\n", customer.memberStatus);
+    printf("  │ " COLOR_DIM "Order Method   :" COLOR_RESET " %-37s " COLOR_CYAN "│\n", customer.orderMethod);
+    printf("  │ " COLOR_DIM "Payment Method :" COLOR_RESET " %-37s " COLOR_CYAN "│\n", customer.paymentMethod);
+    printf("  ├──────┬──────────────────────────┬──────────┬───────┬─────────────┤\n");
+    printf("  │ " COLOR_BOLD "%-4s" COLOR_RESET COLOR_CYAN " │ " COLOR_BOLD "%-24s" COLOR_RESET COLOR_CYAN " │ " COLOR_BOLD "%-8s" COLOR_RESET COLOR_CYAN " │ " COLOR_BOLD "%-5s" COLOR_RESET COLOR_CYAN " │ " COLOR_BOLD "%-11s" COLOR_RESET COLOR_CYAN " │\n", 
            "No", "Item", "Size", "Qty", "Total");
-
-    printf("--------------------------------------------------------\n");
+    printf("  ├──────┼──────────────────────────┼──────────┼───────┼─────────────┤\n");
 
     for (int i = 0; i < customer.cartCount; i++)
     {
-        printf("%-3d %-22s %-8s %-5d RM%-7.2f\n",
+        printf("  │ %-4d │ %-24s │ %-8s │ %-5d │ RM%-9.2f │\n",
                i + 1,
                customer.cart[i].foodName,
                customer.cart[i].size,
@@ -46,18 +43,16 @@ void printReceipt(Customer customer)
                customer.cart[i].totalPrice);
     }
 
-    printf("--------------------------------------------------------\n");
+    printf("  ├──────┴──────────────────────────┴──────────┴───────┴─────────────┤\n");
+    printf("  │ Subtotal                        : RM %18.2f │\n", customer.subtotal);
+    printf("  │ Member Discount                 : RM %18.2f │\n", customer.discount);
+    printf("  │ Service Tax                     : RM %18.2f │\n", customer.serviceTax);
+    printf("  │ Government Tax                  : RM %18.2f │\n", customer.governmentTax);
+    printf("  ├────────────────────────────────────────────────────────┤\n");
+    printf("  │ " COLOR_BOLD "TOTAL                           : RM %18.2f" COLOR_RESET COLOR_CYAN " │\n", customer.finalTotal);
+    printf("  │ Amount Paid                     : RM %18.2f │\n", customer.payment);
+    printf("  │ Change                          : RM %18.2f │\n", customer.change);
+    printf("  ╰────────────────────────────────────────────────────────╯\n" COLOR_RESET);
 
-    printf("%-35s RM %8.2f\n", "Subtotal", customer.subtotal);
-    printf("%-35s RM %8.2f\n", "Member Discount", customer.discount);
-    printf("%-35s RM %8.2f\n", "Service Tax", customer.serviceTax);
-    printf("%-35s RM %8.2f\n", "Government Tax", customer.governmentTax);
-
-    printf("========================================================\n");
-    printf("%-35s RM %8.2f\n", "TOTAL", customer.finalTotal);
-    printf("%-35s RM %8.2f\n", "Amount Paid", customer.payment);
-    printf("%-35s RM %8.2f\n", "Change", customer.change);
-    printf("========================================================\n");
-
-    printf("\nThank you for dining with TKF Restaurant!\n");
+    printf("\n  " COLOR_GREEN "✔ Thank you for dining with TKF Restaurant!" COLOR_RESET "\n");
 }
