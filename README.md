@@ -1,3 +1,5 @@
+<div align="center">
+    
 # TKF Restaurant Payment System
 
 A console-based **restaurant ordering and payment system developed in C** to simulate the ordering and payment process of **The Korean Food (TKF) Restaurant**.
@@ -12,6 +14,8 @@ Originally developed as an academic project, this version represents a **persona
 ![Platform](https://img.shields.io/badge/Platform-Console-success)
 ![Programming](https://img.shields.io/badge/Programming-Structured%20Programming-green)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+</div>
 
 ---
 
