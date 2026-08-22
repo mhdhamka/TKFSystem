@@ -168,7 +168,7 @@ allowing transaction history to remain available after the program exits.
 
 # Technologies Used
 
-| Technology Category | Details & Specifications |
+| Category | Details & Specifications |
 | :--- | :--- |
 | **Language** | C Programming Language |
 | **Compiler** | GCC Compiler |
