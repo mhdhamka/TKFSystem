@@ -168,12 +168,13 @@ allowing transaction history to remain available after the program exits.
 
 # Technologies Used
 
-- C Programming Language
-- GCC Compiler
-- MSYS2 UCRT64 Environment
-- Structured Programming
-- File Processing
-- Console Application
+| Technology Category | Details & Specifications |
+| :--- | :--- |
+| **Language** | C Programming Language |
+| **Compiler** | GCC Compiler |
+| **Environment** | MSYS2 UCRT64 Environment |
+| **Core Concepts** | Structured Programming, File Processing |
+| **Application Type** | Console Application |
 
 ---
 
