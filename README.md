@@ -13,7 +13,6 @@ Originally developed as an academic project, this version represents a **persona
 ![Environment](https://img.shields.io/badge/Environment-MSYS2%20UCRT64-purple)
 ![Platform](https://img.shields.io/badge/Platform-Console-success)
 ![Programming](https://img.shields.io/badge/Programming-Structured%20Programming-green)
-![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
 
 </div>
 
