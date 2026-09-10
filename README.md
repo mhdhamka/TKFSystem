@@ -30,63 +30,17 @@ Originally conceived as an academic exercise, this repository represents an inde
 
 ---
 
-# Introduction
+## Overview & Evolution
 
-The **TKF Restaurant Payment System** is a console application designed to simulate a real-world restaurant Point-of-Sale (POS) system.
+The **TKF Restaurant Payment System** demonstrates advanced use of procedural programming principles in C to solve practical, real-world business constraints. 
 
-The system applies fundamental C programming concepts, including:
-
-- Functions
-- Arrays
-- Structures (`struct`)
-- File processing
-- Modular programming
-
-to develop a practical restaurant management solution.
-
-This project demonstrates the application of **structured programming concepts in C** by solving a real-world problem through modular design, data management, and file-handling techniques.
-
----
-
-# Objectives
-
-- Simulate the ordering and payment process of a restaurant.
-- Provide a user-friendly console-based ordering system.
-- Apply fundamental C programming concepts in a practical application.
-- Improve software design through modular programming.
-- Develop problem-solving and software development skills.
-
----
-
-# Programming Concepts Applied
-
-## Functions
-
-Functions are used to divide the system into smaller reusable components, improving:
-
-- Code readability
-- Maintainability
-- Debugging efficiency
-
-Examples:
-
-- Menu management
-- Order processing
-- Payment calculation
-- Receipt generation
-- File handling
-
----
-
-## Arrays
-
-Arrays are used to store collections of related information, such as:
-
-- Menu items
-- Food prices
-- Customer orders
-- Transaction records
-
+### What's New in This Version?
+This enhanced release introduces a complete architectural refactor:
+* **Modular Codebase:** Separated monolithic scripts into dedicated functional modules (`menu`, `order`, `payment`, `admin`, etc.).
+* **Robust Data Structures:** Utilizes custom `struct` definitions to cleanly map entities like customers, cart items, and catalog items.
+* **Persistent Storage:** Integrated file-handling operations to ensure transaction ledgers (`TransactionRecord.txt`) persist post-execution.
+* **Expanded Capabilities:** Comprehensive admin toolset and dynamic cart handling.
+  
 ---
 
 ## Technical Implementation
@@ -120,30 +74,18 @@ struct CartItem {
 * **File Handling**: Built-in stream management (fopen, fprintf, fgets, fclose) handles local log persistence.
 ---
 
-# Features
+## Core Features
 
-## Customer Features
+### Customer Experience
+* **Interactive Menu:** Browse categorized options with customizable sizing (Regular / Large).
+* **Smart Cart System:** Add, modify, or remove items dynamically prior to checkout.
+* **Discounts & Billing:** Automatic member status validation and total calculations.
+* **Flexible Dining Options:** Seamlessly switch between dine-in and takeaway flows.
+* **Audit Trails:** Instant receipt generation and automatic logging to persistent storage.
 
-- Display restaurant menu
-- Place food orders
-- Manage shopping cart
-- Select food size
-- Select quantity
-- Apply member discounts
-- Choose dine-in or takeaway options
-- Calculate payment automatically
-- Generate receipts
-- Store transaction history
-
----
-
-## Admin Features
-
-- Add menu items
-- Update menu prices
-- Delete menu items
-- View sales information
-- Manage restaurant menu data
+### Administrative 
+* **Catalog Management:** Add, update, or remove menu items on the fly.
+* **Sales Monitoring:** Review historical transactional records and metrics.
 
 ---
 
