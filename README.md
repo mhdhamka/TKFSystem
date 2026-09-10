@@ -89,53 +89,35 @@ Arrays are used to store collections of related information, such as:
 
 ---
 
-## Data Structures
+## Technical Implementation
+The system leverages core structured programming paradigms:
 
-The project utilizes structures (`struct`) to organize multiple data types into meaningful records.
+* **Custom Structures (`struct`):** Encapsulates relational data safely.
 
-Examples:
-
-```c
-struct Customer
-{
+```C
+struct Customer {
     char name[50];
     char memberStatus[20];
     float totalBill;
 };
 
-struct Menu
-{
+struct Menu {
     int id;
     char name[50];
     float regularPrice;
     float largePrice;
 };
 
-struct CartItem
-{
+struct CartItem {
     char foodName[50];
     char size[10];
     int quantity;
     float totalPrice;
 };
 ```
+* **Modular Design**: Decoupled logic improves maintainability, debugging speed, and code readability.
 
-Structures allow related information to be grouped together, making the system easier to organize and expand.
-
----
-
-## File Processing
-
-File handling is implemented to create, read, and store transaction records.
-
-Transaction data is saved into:
-
-```
-TransactionRecord.txt
-```
-
-allowing transaction history to remain available after the program exits.
-
+* **File Handling**: Built-in stream management (fopen, fprintf, fgets, fclose) handles local log persistence.
 ---
 
 # Features
@@ -177,27 +159,25 @@ allowing transaction history to remain available after the program exits.
 
 ---
 
-# Development Environment
+# Getting Started & Compilation
 
-This project is compiled and tested using **MSYS2 UCRT64**, a modern development environment that provides an updated GCC compiler toolchain for Windows.
+### Prerequisites
+Ensure you have a working C compiler toolchain installed. This project is optimized for MSYS2 UCRT64 on Windows:
+* GCC Compiler
+* Make / Bash terminal
 
-MSYS2 UCRT64 provides:
-
-- Latest GCC compiler support
-- Modern C language compatibility
-- Unix-like command-line environment
-- Package management through `pacman`
-- Improved compatibility compared to older MinGW distributions
-
-## Compile
+### Compilation & Execution
+Clone the repository and compile via your terminal:
 
 ```bash
+# Clone the repository
+git clone [https://github.com/mhdhamka/TKFSystem.git](https://github.com/mhdhamka/TKFSystem.git)
+cd TKFSystem
+
+#Compile
 gcc main.c menu.c order.c payment.c receipt.c admin.c file.c utility.c -o TKF
-```
 
 ## Run
-
-```bash
 ./TKF.exe
 ```
 
