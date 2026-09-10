@@ -1,6 +1,6 @@
 <div align="center">
     
-# TKF Restaurant Payment System
+# 🍜 TKF Restaurant Payment System
 
 A feature-rich, console-based **Point-of-Sale (POS) and Restaurant Management System** built in **C**, simulating the ordering, cart, and payment workflow of **The Korean Food (TKF) Restaurant**.
 
@@ -8,12 +8,11 @@ Originally conceived as an academic exercise, this repository represents an inde
 
 ---
 
-![Language](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
-![Compiler](https://img.shields.io/badge/Compiler-GCC-orange?style=for-the-badge&logo=gnu&logoColor=white)
-![Environment](https://img.shields.io/badge/Environment-MSYS2%20UCRT64-701516?style=for-the-badge)
-![Platform](https://img.shields.io/badge/Platform-Console%2FCLI-success?style=for-the-badge&logo=windows&logoColor=white)
-![Architecture](https://img.shields.io/badge/Architecture-Modular-blueviolet?style=for-the-badge)
-![Data Management](https://img.shields.io/badge/Storage-File%20I%20/%20O-217346?style=for-the-badge&logo=txt&logoColor=white)
+![Language](https://img.shields.io/badge/Language-C-%2300599C?style=for-the-badge&logo=c&logoColor=white)
+![Compiler](https://img.shields.io/badge/Compiler-GCC-%23A42E2B?style=for-the-badge&logo=gnu&logoColor=white)
+![Environment](https://img.shields.io/badge/Environment-MSYS2%20UCRT64-%231F1F1F?style=for-the-badge&logo=msys2&logoColor=white)
+![Platform](https://img.shields.io/badge/Platform-Console%2FCLI-%230E8A16?style=for-the-badge&logo=windows&logoColor=white)
+![Architecture](https://img.shields.io/badge/Architecture-Modular-%23563D7C?style=for-the-badge)
 
 </div>
 
@@ -173,7 +172,7 @@ allowing transaction history to remain available after the program exits.
 | **Language** | C Programming Language |
 | **Compiler** | GCC Compiler |
 | **Environment** | MSYS2 UCRT64 Environment |
-| **Core Concepts** | Structured Programming, File Processing |
+| **Paradigm** | Structured Programming, File Processing |
 | **Application Type** | Console Application |
 
 ---
@@ -246,14 +245,7 @@ TKF-Restaurant-Payment-System
 
 # License
 
-This project was developed for **educational and personal software development purposes**.
-
-The original version was created as part of an academic project, while this enhanced version was independently improved to practice:
-
-- Modular programming
-- Software design principles
-- System development using C
-- File-based data management
+Developed as an independent enhancement initiative based on an initial academic project. Designed for educational, portfolio, and software design practice purposes.
 
 ---
 
