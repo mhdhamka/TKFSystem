@@ -8,11 +8,12 @@ Originally conceived as an academic exercise, this repository represents an inde
 
 ---
 
-[![Language](https://img.shields.io/badge/Language-C-blue?style=flat-square&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
-[![Compiler](https://img.shields.io/badge/Compiler-GCC-orange?style=flat-square&logo=gnu&logoColor=white)](https://gcc.gnu.org/)
-[![Environment](https://img.shields.io/badge/Environment-MSYS2%20UCRT64-purple?style=flat-square)](https://www.msys2.org/)
-[![Platform](https://img.shields.io/badge/Platform-CLI%2FConsole-success?style=flat-square)](https://en.wikipedia.org/wiki/Command-line_interface)
-[![Architecture](https://img.shields.io/badge/Architecture-Modular%20Design-informational?style=flat-square)](https://github.com/mhdhamka/TKFSystem)
+![Language](https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c&logoColor=white)
+![Compiler](https://img.shields.io/badge/Compiler-GCC-orange?style=for-the-badge&logo=gnu&logoColor=white)
+![Environment](https://img.shields.io/badge/Environment-MSYS2%20UCRT64-701516?style=for-the-badge)
+![Platform](https://img.shields.io/badge/Platform-Console%2FCLI-success?style=for-the-badge&logo=windows&logoColor=white)
+![Architecture](https://img.shields.io/badge/Architecture-Modular-blueviolet?style=for-the-badge)
+![Data Management](https://img.shields.io/badge/Storage-File%20I%20/%20O-217346?style=for-the-badge&logo=txt&logoColor=white)
 
 </div>
 
